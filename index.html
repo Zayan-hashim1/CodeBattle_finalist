@@ -1,1 +1,76 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClearPath | Learn Without Limits</title>
+    <meta name="description" content="An autism-friendly educational website for children aged 7–11.">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-[#FFF9ED] text-[#263B37]">
+    <main id="app">
+        <section id="welcomeScreen" class="screen min-h-screen flex flex-col">
+            <header class="flex items-center justify-between px-8 py-6">
+                <h1 class="text-3xl font-bold text-[#286B5B]">ClearPath<span class="text-[#E6AE55]">.</span></h1>
+                <p class="hidden text-sm text-[#64746F] sm:block">Learning without limits</p>
+            </header>
+            <div class="flex flex-1 items-center px-8 py-12">
+                <div class="mx-auto grid w-full max-w-5xl items-center gap-12 md:grid-cols-2">
+                    <div>
+                        <p class="mb-4 font-semibold text-[#B77B3D]">A PLACE FOR CURIOUS MINDS</p>
+                        <h2 class="text-4xl font-bold leading-tight sm:text-5xl">Welcome to <span class="text-[#286B5B]">ClearPath!</span></h2>
+                        <p class="mt-6 max-w-md text-lg leading-relaxed text-[#64746F]">Explore new ideas, try fun activities and discover a way of learning that works for you.</p>
+                        <button id="startButton" class="mt-8 rounded-xl bg-[#286B5B] px-8 py-4 font-semibold text-white transition hover:bg-[#205548]">Let's get started →</button>
+                        <p class="mt-5 text-sm text-[#64746F]">Take your time. There's no rush.</p>
+                    </div>
+                    <div class="flex min-h-64 items-center justify-center rounded-3xl bg-[#E8F0DF] p-8">
+                        <div class="text-center">
+                            <div class="text-7xl">🌱</div>
+                            <p class="mt-5 text-lg font-semibold text-[#426B54]">Grow your curiosity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="subjectScreen" class="screen hidden min-h-screen px-6 py-8">
+            <div class="mx-auto max-w-5xl">
+                <header class="flex items-center justify-between">
+                    <h1 class="text-2xl font-bold text-[#286B5B]">ClearPath.</h1>
+                    <p class="text-sm text-[#64746F]">Choose your next lesson</p>
+                </header>
+                <div class="mt-16">
+                    <p class="font-semibold text-[#B77B3D]">LET'S EXPLORE</p>
+                    <h2 class="mt-3 text-3xl font-bold sm:text-4xl">What would you like to learn?</h2>
+                    <p class="mt-3 text-[#64746F]">Pick a subject to begin.</p>
+                </div>
+                <div class="mt-10 grid gap-5 md:grid-cols-3">
+                    <button id="scienceButton" data-subject="science" class="rounded-2xl border-2 border-[#B8D2A7] bg-[#E8F0DF] p-6 text-left transition hover:-translate-y-1 hover:shadow-md">
+                        <div class="text-4xl">🔬</div>
+                        <h3 class="mt-5 text-xl font-bold">Science</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-[#64746F]">The Water Cycle</p>
+                        <p class="mt-6 text-sm font-semibold text-[#286B5B]">Explore science →</p>
+                    </button>
+                    <button id="mathsButton" data-subject="maths" class="rounded-2xl border-2 border-[#D5C7EA] bg-[#EDE6FA] p-6 text-left transition hover:-translate-y-1 hover:shadow-md">
+                        <div class="text-4xl">➗</div>
+                        <h3 class="mt-5 text-xl font-bold">Maths</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-[#64746F]">Understanding Fractions</p>
+                        <p class="mt-6 text-sm font-semibold text-[#66538A]">Explore maths →</p>
+                    </button>
+                    <button id="englishButton" data-subject="english" class="rounded-2xl border-2 border-[#B9D5E9] bg-[#E5F0FC] p-6 text-left transition hover:-translate-y-1 hover:shadow-md">
+                        <div class="text-4xl">📖</div>
+                        <h3 class="mt-5 text-xl font-bold">English</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-[#64746F]">Parts of Speech</p>
+                        <p class="mt-6 text-sm font-semibold text-[#426B85]">Explore English →</p>
+                    </button>
+                </div>
+                <div class="mt-10">
+                    <button id="continueButton" disabled class="rounded-xl bg-[#286B5B] px-9 py-4 font-semibold text-white opacity-50">Continue →</button>
+                    <p class="mt-4 text-sm text-[#64746F]">Choose one subject to continue.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
